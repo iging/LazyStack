@@ -661,7 +661,7 @@ export const developmentTools = [
     title: "Kombai",
     description:
       "The AI Agent Built for. Frontend Development. Generic AIs struggle with complex frontend tasks. With specialized context-engine and tooling, Kombai delivers unmatched fidelity, code quality, and, dev velocity.",
-    icon: "",
+    icon: "/assets/development/kombai-icon.png",
     category: "Development",
     benefits: [""],
     highlight: "Glamorous",
