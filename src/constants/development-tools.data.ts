@@ -663,8 +663,26 @@ export const developmentTools = [
       "The AI Agent Built for. Frontend Development. Generic AIs struggle with complex frontend tasks. With specialized context-engine and tooling, Kombai delivers unmatched fidelity, code quality, and, dev velocity.",
     icon: "/assets/development/kombai-icon.png",
     category: "Development",
-    benefits: [""],
+    benefits: [
+      "AI-powered app development: Build full-stack applications using natural language prompts",
+      "Seamless integration with popular tools and frameworks",
+      "Real-time collaboration and version control",
+    ],
     highlight: "Glamorous",
     link: "https://kombai.com/",
+  },
+  {
+    title: "Lovable",
+    description:
+      "Lovable is a platform that lets you build apps and websites by chatting with AI. We are a small European team of serial founders, product engineers, physicists, competitive programmers and people who just care about building a great product quickly. We're on a mission to build the last piece of software that the world will ever need.",
+    icon: "/assets/development/lovable-icon.png",
+    category: "Development",
+    benefits: [
+      "AI-powered app development: Build full-stack applications using natural language prompts",
+      "Seamless integration with popular tools and frameworks",
+      "Real-time collaboration and version control",
+    ],
+    highlight: "Glamorous",
+    link: "https://lovable.dev/",
   },
 ];
