@@ -689,7 +689,7 @@ export const developmentTools = [
     title: "Z.ai",
     description:
       "The AI lab behind GLM models, dedicated to inspiring the development of AGI to benefit humanity.",
-    icon: "",
+    icon: "/assets/development/chat-zai-icon.png",
     category: "Development",
     benefits: [
       "AI-powered app development: Build full-stack applications using natural language prompts",
