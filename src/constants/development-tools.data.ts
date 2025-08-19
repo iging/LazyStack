@@ -676,7 +676,7 @@ export const developmentTools = [
     description:
       "Lovable is a platform that lets you build apps and websites by chatting with AI. We are a small European team of serial founders, product engineers, physicists, competitive programmers and people who just care about building a great product quickly. We're on a mission to build the last piece of software that the world will ever need.",
     icon: "/assets/development/lovable-icon.png",
-    category: "Development",  
+    category: "Development",
     benefits: [
       "AI-powered app development: Build full-stack applications using natural language prompts",
       "Seamless integration with popular tools and frameworks",
@@ -684,5 +684,19 @@ export const developmentTools = [
     ],
     highlight: "Glamorous",
     link: "https://lovable.dev/",
+  },
+  {
+    title: "Z.ai",
+    description:
+      "The AI lab behind GLM models, dedicated to inspiring the development of AGI to benefit humanity.",
+    icon: "",
+    category: "Development",
+    benefits: [
+      "AI-powered app development: Build full-stack applications using natural language prompts",
+      "Seamless integration with popular tools and frameworks",
+      "Real-time collaboration and version control",
+    ],
+    highlight: "Glamorous",
+    link: "https://chat.z.ai/",
   },
 ];
