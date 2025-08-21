@@ -699,4 +699,13 @@ export const developmentTools = [
     highlight: "Glamorous",
     link: "https://chat.z.ai/",
   },
+  {
+    title: "Base44",
+    description: "",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "Glamorous",
+    link: "https://base44.com/",
+  },
 ];
