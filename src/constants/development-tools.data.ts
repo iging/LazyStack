@@ -702,7 +702,7 @@ export const developmentTools = [
   {
     title: "Base44",
     description: "",
-    icon: "",
+    icon: "/assets/development/base44-icon.png",
     category: "Development",
     benefits: [""],
     highlight: "Glamorous",
