@@ -701,21 +701,30 @@ export const developmentTools = [
   },
   {
     title: "Base44",
-    description: "",
+    description:
+      "Base44 is an AI-powered app development platform that lets users build fully functional applications in minutes using natural language—no coding required. Whether you're launching a dashboard, onboarding portal, or gaming platform, Base44 handles everything from backend logic to hosting, so you can focus on your idea.",
     icon: "/assets/development/base44-icon.png",
     category: "Development",
-    benefits: [""],
-    highlight: "Glamorous",
+    benefits: [
+      "Natural language to live app: Just describe your idea and Base44 generates the structure, flows, and features",
+      "Built-in backend: Includes authentication, database, and role-based permissions—automatically",
+      "Instant deployment: Apps are hosted and live the moment they’re built, ready to share or scale",
+    ],
+    highlight: "Frictionless",
     link: "https://base44.com/",
   },
   {
     title: "Qoder",
     description:
-      "Qoder is an agentic coding platform designed for real software development. It seamlessly integrates enhanced context engineering with intelligent agents to gain a comprehensive understanding of your codebase and systematically tackles software development tasks.",
+      "Qoder is an agentic AI coding platform designed to help developers solve real software challenges through deep context, intelligent tooling, and autonomous workflows. It’s not just another AI IDE—it’s a full-stack assistant that understands your architecture, adapts to your style, and executes with precision.",
     icon: "",
     category: "Development",
-    benefits: [""],
-    highlight: "Glamorous",
+    benefits: [
+      "Intelligent Codebase Search: Pinpoint relevant code instantly across your entire repo",
+      "Spec-driven development: Write specs, delegate implementation, and stay in control",
+      "MCP tool integration: Extend capabilities with multi-agent collaboration and built-in tools",
+    ],
+    highlight: "Insightful",
     link: "https://qoder.com/",
   },
 ];
