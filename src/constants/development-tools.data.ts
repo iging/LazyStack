@@ -708,4 +708,14 @@ export const developmentTools = [
     highlight: "Glamorous",
     link: "https://base44.com/",
   },
+  {
+    title: "Qoder",
+    description:
+      "Qoder is an agentic coding platform designed for real software development. It seamlessly integrates enhanced context engineering with intelligent agents to gain a comprehensive understanding of your codebase and systematically tackles software development tasks.",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "Glamorous",
+    link: "https://qoder.com/",
+  },
 ];
