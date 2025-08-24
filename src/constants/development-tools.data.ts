@@ -660,43 +660,43 @@ export const developmentTools = [
   {
     title: "Kombai",
     description:
-      "The AI Agent Built for. Frontend Development. Generic AIs struggle with complex frontend tasks. With specialized context-engine and tooling, Kombai delivers unmatched fidelity, code quality, and, dev velocity.",
+      "Kombai is an AI agent purpose-built for frontend development, designed to outperform generic coding agents and frontier models in tasks like Figma-to-code conversion, feature implementation, and code reviews. It uses a specialized context engine, supports over 30+ frontend libraries, and integrates directly into your IDE for high-fidelity, backend-agnostic code generation.",
     icon: "/assets/development/kombai-icon.png",
     category: "Development",
     benefits: [
-      "AI-powered app development: Build full-stack applications using natural language prompts",
-      "Seamless integration with popular tools and frameworks",
-      "Real-time collaboration and version control",
+      "Best-in-class Figma interpretation: Converts real-world designs into production-ready code with unmatched accuracy",
+      "Frontend-specific context engine: Understands your repo, stack, and components for smarter reuse and planning",
+      "Enterprise-grade privacy & control: SOC 2 certified, with org-specific context setups and zero data training usage",
     ],
-    highlight: "Glamorous",
+    highlight: "Specialized",
     link: "https://kombai.com/",
   },
   {
     title: "Lovable",
     description:
-      "Lovable is a platform that lets you build apps and websites by chatting with AI. We are a small European team of serial founders, product engineers, physicists, competitive programmers and people who just care about building a great product quickly. We're on a mission to build the last piece of software that the world will ever need.",
+      "Lovable.dev is a chat-based app builder that lets users create websites, internal tools, consumer apps, and prototypes simply by talking to an AI. It’s designed for speed, creativity, and remixability—offering a community-driven platform where users can build, share, and customize projects with minimal effort.",
     icon: "/assets/development/lovable-icon.png",
     category: "Development",
     benefits: [
-      "AI-powered app development: Build full-stack applications using natural language prompts",
-      "Seamless integration with popular tools and frameworks",
-      "Real-time collaboration and version control",
+      "Conversational creation: Build full-stack apps by describing what you want—no coding required",
+      "Remixable templates: Browse and fork thousands of community-built apps, from dashboards to landing pages",
+      "Instant deployment: Apps are hosted and live the moment they’re created, ready to share or iterate",
     ],
-    highlight: "Glamorous",
+    highlight: "Creative",
     link: "https://lovable.dev/",
   },
   {
     title: "Z.ai",
     description:
-      "The AI lab behind GLM models, dedicated to inspiring the development of AGI to benefit humanity.",
+      "Chat.z.ai is a free AI chatbot platform powered by GLM-4.5, designed to help users tackle a wide range of tasks—from coding and writing to presentations and full-stack app generation. It offers a conversational interface where users simply describe what they need, and the AI delivers instant, high-quality results.",
     icon: "/assets/development/chat-zai-icon.png",
     category: "Development",
     benefits: [
-      "AI-powered app development: Build full-stack applications using natural language prompts",
-      "Seamless integration with popular tools and frameworks",
-      "Real-time collaboration and version control",
+      "Natural language interface: Just tell Z.ai what you want—no prompt engineering required",
+      "Multitask mastery: Supports coding, design, writing, and research with expert-level output",
+      "Instant results: Get production-ready content, code, or assets in seconds",
     ],
-    highlight: "Glamorous",
+    highlight: "Versatile",
     link: "https://chat.z.ai/",
   },
   {
