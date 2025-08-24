@@ -689,7 +689,7 @@ export const developmentTools = [
     title: "Z.ai",
     description:
       "Chat.z.ai is a free AI chatbot platform powered by GLM-4.5, designed to help users tackle a wide range of tasks—from coding and writing to presentations and full-stack app generation. It offers a conversational interface where users simply describe what they need, and the AI delivers instant, high-quality results.",
-    icon: "/assets/development/chat-zai-icon.png",
+    icon: "/assets/development/chat-z-icon.png",
     category: "Development",
     benefits: [
       "Natural language interface: Just tell Z.ai what you want—no prompt engineering required",
