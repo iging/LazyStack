@@ -717,7 +717,7 @@ export const developmentTools = [
     title: "Qoder",
     description:
       "Qoder is an agentic AI coding platform designed to help developers solve real software challenges through deep context, intelligent tooling, and autonomous workflows. It’s not just another AI IDE—it’s a full-stack assistant that understands your architecture, adapts to your style, and executes with precision.",
-    icon: "",
+    icon: "/assets/development/qoder-icon.png",
     category: "Development",
     benefits: [
       "Intelligent Codebase Search: Pinpoint relevant code instantly across your entire repo",
