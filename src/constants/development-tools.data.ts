@@ -731,7 +731,7 @@ export const developmentTools = [
     title: "Sentry",
     description:
       "Sentry automatically detects and notifies you of critical performance issues so you can trace every slow transaction to a poor-performing API call or DB query",
-    icon: "",
+    icon: "/assets/development/sentry-icon.png",
     category: "Development",
     benefits: [""],
     highlight: "Glamorous",
