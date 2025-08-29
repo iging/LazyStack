@@ -6,9 +6,9 @@ import { ToolCategoriesProps } from "@/types/tool-types";
 import { CategoryHeader } from "./CategoryHeader";
 import { Tool } from "@/types/tool-types";
 import ToolCard from "../Cards/ToolCard";
-import { ViewMoreButton } from "./ViewMoreButton";
+import { Pagination } from "./Pagination";
 import { useCategoryTools } from "@/hooks/useCategoryTools";
-import { ArrowDownAZ, ArrowDownZA, Sliders } from "lucide-react";
+import { ArrowDownAZ, ArrowDownZA } from "lucide-react";
 
 /**
  * Displays a category of tools with an optional "View More" functionality
@@ -20,6 +20,7 @@ export default function ToolCategories({
   bgColor = "#050508",
   showViewMore = false,
   initialVisibleCount = 7,
+  itemsPerPage = 6,
 }: ToolCategoriesProps) {
   const { theme } = useTheme();
   const [isSortedAlphabetically, setIsSortedAlphabetically] = useState(false);
@@ -29,19 +30,19 @@ export default function ToolCategories({
     ? [...tools].sort((a, b) => a.title.localeCompare(b.title))
     : tools;
 
-  // Use our custom hook to manage tools state and loading behavior
+  // Use our custom hook to manage tools state and pagination
   const {
     visibleTools,
-    visibleCount,
-    hasMoreTools,
+    currentPage,
+    totalPages,
     isLoading,
     initialToolsLoaded,
-    handleLoadMore,
-    handleResetView,
+    handlePageChange,
     sectionRef,
   } = useCategoryTools({
     tools: sortedTools,
     initialVisibleCount,
+    itemsPerPage: itemsPerPage || 6, // Use prop or default to 6 items per page
   });
 
   // Determine background color based on theme
@@ -81,7 +82,7 @@ export default function ToolCategories({
                 <div
                   className="relative h-full rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 transition-all duration-700 ease-out"
                   style={{
-                    width: `${Math.min(100, (visibleCount / tools.length) * 100)}%`,
+                    width: `${Math.min(100, (currentPage / totalPages) * 100)}%`,
                   }}
                 >
                   {/* Animated shine effect */}
@@ -91,7 +92,7 @@ export default function ToolCategories({
                 </div>
               </div>
               <span className="whitespace-nowrap text-xs font-medium text-muted-foreground">
-                {visibleCount} of {tools.length} shown
+                Page {currentPage} of {totalPages}
               </span>
             </div>
           </div>
@@ -173,29 +174,15 @@ export default function ToolCategories({
         {/* Custom grid with tool count and sort button */}
         {renderToolCards()}
 
-        {/* View more/less button */}
+        {/* Pagination */}
         {showViewMore && tools.length > initialVisibleCount && (
-          <div className="mt-16 flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
-            {visibleCount > initialVisibleCount && (
-              <ViewMoreButton
-                hasMoreTools={false}
-                isLoading={isLoading}
-                initialVisibleCount={initialVisibleCount}
-                visibleCount={visibleCount}
-                onLoadMore={handleLoadMore}
-                onResetView={handleResetView}
-              />
-            )}
-            {hasMoreTools && (
-              <ViewMoreButton
-                hasMoreTools={true}
-                isLoading={isLoading}
-                initialVisibleCount={initialVisibleCount}
-                visibleCount={visibleCount}
-                onLoadMore={handleLoadMore}
-                onResetView={handleResetView}
-              />
-            )}
+          <div className="mt-16 flex justify-center">
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+              className="mt-8"
+            />
           </div>
         )}
       </div>
