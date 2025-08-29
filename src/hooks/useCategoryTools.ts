@@ -1,104 +1,99 @@
-import { useState, useRef, useEffect, useLayoutEffect } from "react";
+import {
+  useState,
+  useRef,
+  useEffect,
+  useLayoutEffect,
+  useCallback,
+} from "react";
 import { Tool } from "@/types/tool-types";
 
 interface UseCategoryToolsParams {
   tools: Tool[];
   initialVisibleCount: number;
-  loadMoreCount?: number;
+  itemsPerPage?: number;
 }
 
 interface UseCategoryToolsReturn {
   visibleTools: Tool[];
-  visibleCount: number;
-  hasMoreTools: boolean;
+  currentPage: number;
+  totalPages: number;
   isLoading: boolean;
   initialToolsLoaded: boolean;
-  handleLoadMore: () => void;
-  handleResetView: () => void;
+  handlePageChange: (page: number) => void;
   sectionRef: React.RefObject<HTMLDivElement>;
 }
 
 /**
- * Custom hook for managing tool category loading and pagination
+ * Custom hook for managing tool category pagination
  */
 export function useCategoryTools({
   tools,
   initialVisibleCount,
-  loadMoreCount = 6,
+  itemsPerPage = 6,
 }: UseCategoryToolsParams): UseCategoryToolsReturn {
-  const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const scrollPositionRef = useRef(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
   const [initialToolsLoaded, setInitialToolsLoaded] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const scrollPositionRef = useRef(0);
 
-  // Fix for React Server Components (useLayoutEffect not available on server)
-  const useIsomorphicLayoutEffect =
-    typeof window !== "undefined" ? useLayoutEffect : useEffect;
+  // Calculate total pages
+  const totalPages = Math.ceil(tools.length / itemsPerPage);
+
+  // Calculate visible tools for current page
+  const getVisibleTools = useCallback(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return tools.slice(startIndex, endIndex);
+  }, [currentPage, itemsPerPage, tools]);
 
   // Initial loading of tools
   useEffect(() => {
     setInitialToolsLoaded(true);
   }, []);
 
-  const handleLoadMore = () => {
-    // Prevent multiple clicks during loading
-    if (isLoading) return;
+  const handlePageChange = useCallback(
+    (page: number) => {
+      if (page < 1 || page > totalPages) return;
 
-    setIsLoading(true);
+      setIsLoading(true);
+      scrollPositionRef.current = window.scrollY;
+      setCurrentPage(page);
+    },
+    [totalPages],
+  );
 
-    // Store exact scroll position before adding more items
-    scrollPositionRef.current = window.scrollY;
-
-    // Increase the visible count incrementally
-    setVisibleCount((prevCount) =>
-      Math.min(prevCount + loadMoreCount, tools.length),
-    );
-  };
+  // Reset to first page when tools change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [tools]);
 
   // Use layout effect to handle scroll position immediately after DOM update
+  const useIsomorphicLayoutEffect =
+    typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
   useIsomorphicLayoutEffect(() => {
     if (isLoading) {
-      // Need to wait for the browser to actually render the new content
       requestAnimationFrame(() => {
-        // Restore precise scroll position to keep user where they were
+        // Restore scroll position after page change
         window.scrollTo({
-          top: scrollPositionRef.current,
-          behavior: "auto",
+          top: sectionRef.current?.offsetTop
+            ? sectionRef.current.offsetTop - 20 // Add small offset from the top
+            : 0,
+          behavior: "smooth",
         });
-
-        // Reset loading state after scroll is adjusted
         setIsLoading(false);
       });
     }
-  }, [visibleCount, isLoading]);
-
-  const handleResetView = () => {
-    // If current visible count is greater than 6, set to 6
-    // Otherwise, reset to initialVisibleCount (this preserves initial behavior if there are fewer than 6 items)
-    if (visibleCount > 6) {
-      setVisibleCount(6);
-    } else {
-      setVisibleCount(initialVisibleCount);
-    }
-
-    // After state update, scroll to the top of the section
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
-  const visibleTools = tools.slice(0, visibleCount);
-  const hasMoreTools = visibleCount < tools.length;
+  }, [currentPage, isLoading]);
 
   return {
-    visibleTools,
-    visibleCount,
-    hasMoreTools,
+    visibleTools: getVisibleTools(),
+    currentPage,
+    totalPages,
     isLoading,
     initialToolsLoaded,
-    handleLoadMore,
-    handleResetView,
+    handlePageChange,
     sectionRef,
   };
 }
