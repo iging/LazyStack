@@ -46,4 +46,5 @@ export interface ToolCategoriesProps {
   bgColor?: string;
   showViewMore?: boolean;
   initialVisibleCount?: number;
+  itemsPerPage?: number;
 }
