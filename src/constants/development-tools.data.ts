@@ -730,11 +730,15 @@ export const developmentTools = [
   {
     title: "Sentry",
     description:
-      "Sentry automatically detects and notifies you of critical performance issues so you can trace every slow transaction to a poor-performing API call or DB query",
+      "Sentry is a developer-first observability platform that helps teams monitor, debug, and optimize application performance in real time. It provides deep insights into errors, crashes, and latency across frontend, backend, and mobile environments—so developers can fix issues before users notice.",
     icon: "/assets/development/sentry-icon.png",
     category: "Development",
-    benefits: [""],
-    highlight: "Glamorous",
+    benefits: [
+      "Real-time error tracking: Capture stack traces, breadcrumbs, and context for faster debugging",
+      "Performance monitoring: Identify slow transactions, bottlenecks, and regressions across services",
+      "Release health & alerts: Track deployments, user impact, and get notified when things break",
+    ],
+    highlight: "Reliable",
     link: "https://sentry.io/welcome/",
   },
 ];
