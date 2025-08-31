@@ -745,7 +745,7 @@ export const developmentTools = [
     title: "Sim",
     description:
       "Sim is a visual workflow editor that enables you to build AI-powered applications by connecting blocks on a canvas. Drag and drop components to create chatbots, automation workflows, and data processing pipelines without writing code.",
-    icon: "",
+    icon: "/assets/development/sim-icon.png",
     category: "Development",
     benefits: [],
     highlight: "Quality",
