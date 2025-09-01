@@ -744,11 +744,15 @@ export const developmentTools = [
   {
     title: "Sim",
     description:
-      "Sim is a visual workflow editor that enables you to build AI-powered applications by connecting blocks on a canvas. Drag and drop components to create chatbots, automation workflows, and data processing pipelines without writing code.",
+      "Sim.ai is an open-source platform for building and deploying agentic workflows, designed to give developers and AI agents a user-friendly environment for launching autonomous tasks. It emphasizes modularity, transparency, and ease of use—making it ideal for teams experimenting with agent-based systems.",
     icon: "/assets/development/sim-icon.png",
     category: "Development",
-    benefits: [],
-    highlight: "Quality",
+    benefits: [
+      "Agentic workflow builder: Create and manage multi-step, goal-driven agent flows with minimal setup",
+      "Open-source foundation: Customize, extend, and self-host with full control over your agent infrastructure",
+      "Developer-first UX: Built for fast iteration, debugging, and collaboration between humans and agents",
+    ],
+    highlight: "Modular",
     link: "https://www.sim.ai/",
   },
 ];
