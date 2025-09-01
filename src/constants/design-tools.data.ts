@@ -381,7 +381,7 @@ export const designTools = [
     title: "NanoBanana",
     description:
       "Transform any image with simple text prompts. Nano-banana's advanced model delivers consistent character editing and scene preservation that surpasses Flux Kontext. Experience the future of AI image editing.",
-    icon: "/assets/design/nanobanana-icon.png",
+    icon: "",
     category: "UI/UX",
     benefits: [
       "Advanced image editing with simple text prompts",
