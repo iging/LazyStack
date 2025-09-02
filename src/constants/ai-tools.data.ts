@@ -545,4 +545,18 @@ export const aiTools = [
     highlight: "Effortless",
     link: "https://www.rocket.new/",
   },
+  {
+    title: "Google AI Studio",
+    description:
+      "Transform any image with simple text prompts. Nano-banana's advanced model delivers consistent character editing and scene preservation that surpasses Flux Kontext. Experience the future of AI image editing.",
+    icon: "",
+    category: "AI",
+    benefits: [
+      "AI-powered image editing with simple text prompts",
+      "Consistent character editing and scene preservation",
+      "Future of AI image editing",
+    ],
+    highlight: "Advanced",
+    link: "https://aistudio.google.com/",
+  },
 ];
