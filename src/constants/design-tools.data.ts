@@ -377,18 +377,4 @@ export const designTools = [
     highlight: "Conversion",
     link: "https://webfluin.com/",
   },
-  {
-    title: "NanoBanana",
-    description:
-      "Transform any image with simple text prompts. Nano-banana's advanced model delivers consistent character editing and scene preservation that surpasses Flux Kontext. Experience the future of AI image editing.",
-    icon: "",
-    category: "UI/UX",
-    benefits: [
-      "Advanced image editing with simple text prompts",
-      "Consistent character editing and scene preservation",
-      "Future of AI image editing",
-    ],
-    highlight: "Advanced",
-    link: "https://nanobanana.ai/",
-  },
 ];
