@@ -549,7 +549,7 @@ export const aiTools = [
     title: "Google AI Studio",
     description:
       "Transform any image with simple text prompts. Nano-banana's advanced model delivers consistent character editing and scene preservation that surpasses Flux Kontext. Experience the future of AI image editing.",
-    icon: "",
+    icon: "/assets/ai/google-ai-studio-icon.png",
     category: "AI",
     benefits: [
       "AI-powered image editing with simple text prompts",
