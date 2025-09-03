@@ -548,15 +548,15 @@ export const aiTools = [
   {
     title: "Google AI Studio",
     description:
-      "Transform any image with simple text prompts. Nano-banana's advanced model delivers consistent character editing and scene preservation that surpasses Flux Kontext. Experience the future of AI image editing.",
+      "Google AI Studio is a developer-friendly platform for experimenting with and deploying Google’s Gemini models. It offers a streamlined interface for prompt engineering, model testing, and API integration, making it easy to prototype and scale AI-powered applications.",
     icon: "/assets/ai/google-ai-studio-icon.png",
     category: "AI",
     benefits: [
-      "AI-powered image editing with simple text prompts",
-      "Consistent character editing and scene preservation",
-      "Future of AI image editing",
+      "Rapid prototyping: Test prompts and iterate quickly with real-time feedback from Gemini models",
+      "Easy API export: Turn successful prompts into production-ready endpoints with one click",
+      "Built-in documentation & examples: Learn best practices for prompt design and model usage directly in the interface",
     ],
-    highlight: "Advanced",
+    highlight: "Accessible",
     link: "https://aistudio.google.com/",
   },
 ];
