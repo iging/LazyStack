@@ -559,4 +559,18 @@ export const aiTools = [
     highlight: "Accessible",
     link: "https://aistudio.google.com/",
   },
+  {
+    title: "Aivene",
+    description:
+      "Aivene revolutionizes AI access through intelligent agents and unified model integration. We enhance productivity and knowledge discovery with autonomous AI agents and seamless multi-model capabilities.",
+    icon: "",
+    category: "AI",
+    benefits: [
+      "Autonomous AI agents for rapid prototyping and knowledge discovery",
+      "Seamless multi-model integration for unified access to AI capabilities",
+      "Enterprise-grade security with local deployment options and SOC-2/ISO 27001 compliance",
+    ],
+    highlight: "Accessible",
+    link: "https://aivene.com/",
+  },
 ];
