@@ -562,15 +562,15 @@ export const aiTools = [
   {
     title: "Aivene",
     description:
-      "Aivene revolutionizes AI access through intelligent agents and unified model integration. We enhance productivity and knowledge discovery with autonomous AI agents and seamless multi-model capabilities.",
+      "Aivene is an AI research and productivity platform that connects users to multiple leading AI models through intelligent agents. Designed for tasks like research, analysis, and workflow automation, Aivene aims to simplify complex work by pairing each database with a dedicated LLM and offering seamless integration across tools.",
     icon: "",
     category: "AI",
     benefits: [
-      "Autonomous AI agents for rapid prototyping and knowledge discovery",
-      "Seamless multi-model integration for unified access to AI capabilities",
-      "Enterprise-grade security with local deployment options and SOC-2/ISO 27001 compliance",
+      "Multi-model access: Tap into various AI models from a single interface for broader capabilities",
+      "Agentic productivity: Agents designed to assist with research, complex tasks, and enterprise workflows (coming soon)",
+      "Unified platform: Connect and manage AI tools with enterprise-grade integration and ease",
     ],
-    highlight: "Accessible",
+    highlight: "Integrated",
     link: "https://aivene.com/",
   },
 ];
