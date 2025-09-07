@@ -755,4 +755,18 @@ export const developmentTools = [
     highlight: "Modular",
     link: "https://www.sim.ai/",
   },
+  {
+    title: "Junie",
+    description:
+      "When Junie updates your code, it uses the power of your IDE to make sure every change meets your standards. With built-in syntax and semantic checks, your code stays clean, consistent, and production-ready.",
+    icon: "",
+    category: "Development",
+    benefits: [
+      "Code quality: Ensures every change meets your standards with built-in syntax and semantic checks",
+      "Consistency: Keeps your code clean and consistent with your team's coding standards",
+      "Production-ready: Your code stays production-ready with minimal effort",
+    ],
+    highlight: "Modular",
+    link: "https://www.jetbrains.com/junie/",
+  },
 ];
