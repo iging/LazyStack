@@ -574,17 +574,17 @@ export const aiTools = [
     link: "https://aivene.com/",
   },
   {
-    title: "Agentgateway",
+    title: "AgentGateway",
     description:
-      "Agentgateway connects AI agents, MCP tool servers, and LLM providers in any environment. These two-way connections are secure, scalable, and stateful. You get enterprise-grade security, observability, resiliency, reliability, and multi-tenancy features. This way, agentgateway addresses common gaps with traditional gateway proxies or protocols like MCP and A2A. With agentgateway, you can quickly adopt and scale your agentic AI environments.",
+      "AgentGateway is an open-source connectivity layer built for agentic AI applications. It solves the challenge of secure, observable agent-to-agent and agent-to-tool communication across any framework or environment. Designed around AI-native protocols, it enables seamless integration and governance in multi-agent systems.",
     icon: "/assets/ai/agentgateway-icon.png",
     category: "AI",
     benefits: [
-      "Secure, scalable, and stateful connections between AI agents, MCP tool servers, and LLM providers",
-      "Enterprise-grade security, observability, resiliency, reliability, and multi-tenancy features",
-      "Addresses common gaps with traditional gateway proxies or protocols like MCP and A2A",
+      "Federated MCP endpoint: Centralized registry and dynamic configuration for scalable agent orchestration",
+      "Security & observability: Transparent drop-in solution for auditing and governing agent/tool interactions",
+      "Protocol-agnostic integration: Works across any agent framework supporting A2A and MCP standards",
     ],
-    highlight: "Scalable",
+    highlight: "Connected",
     link: "https://agentgateway.dev/",
   },
 ];
