@@ -758,15 +758,15 @@ export const developmentTools = [
   {
     title: "Junie",
     description:
-      "When Junie updates your code, it uses the power of your IDE to make sure every change meets your standards. With built-in syntax and semantic checks, your code stays clean, consistent, and production-ready.",
+      "Junie is an AI coding agent by JetBrains, designed to work natively inside JetBrains IDEs like IntelliJ IDEA, PyCharm, WebStorm, and Android Studio. It helps developers write, test, and refactor code, propose execution plans, and collaborate on complex tasks—all while staying embedded in your existing workflow.",
     icon: "",
     category: "Development",
     benefits: [
-      "Code quality: Ensures every change meets your standards with built-in syntax and semantic checks",
-      "Consistency: Keeps your code clean and consistent with your team's coding standards",
-      "Production-ready: Your code stays production-ready with minimal effort",
+      "Context-aware coding: Junie understands your project’s structure and logic to suggest accurate, relevant solutions",
+      "Dual interaction modes: Use code mode for execution and ask mode for brainstorming, planning, and Q&A",
+      "Built-in inspections & testing: Every change is validated with syntax checks and test runs to keep your code production-ready",
     ],
-    highlight: "Modular",
+    highlight: "Embedded",
     link: "https://www.jetbrains.com/junie/",
   },
 ];
