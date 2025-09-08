@@ -759,7 +759,7 @@ export const developmentTools = [
     title: "Junie",
     description:
       "Junie is an AI coding agent by JetBrains, designed to work natively inside JetBrains IDEs like IntelliJ IDEA, PyCharm, WebStorm, and Android Studio. It helps developers write, test, and refactor code, propose execution plans, and collaborate on complex tasks—all while staying embedded in your existing workflow.",
-    icon: "",
+    icon: "/assets/development/junie-icon.png",
     category: "Development",
     benefits: [
       "Context-aware coding: Junie understands your project’s structure and logic to suggest accurate, relevant solutions",
