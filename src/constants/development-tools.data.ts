@@ -769,4 +769,14 @@ export const developmentTools = [
     highlight: "Embedded",
     link: "https://www.jetbrains.com/junie/",
   },
+  {
+    title: "Spec Kit",
+    description:
+      "Spec-Driven Development flips the script on traditional software development. For decades, code has been king — specifications were just scaffolding we built and discarded once the real work of coding began. Spec-Driven Development changes this: specifications become executable, directly generating working implementations rather than just guiding them.",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "",
+    link: "https://github.com/github/spec-kit",
+  },
 ];
