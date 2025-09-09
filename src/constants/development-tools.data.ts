@@ -775,8 +775,13 @@ export const developmentTools = [
       "Spec-Driven Development flips the script on traditional software development. For decades, code has been king — specifications were just scaffolding we built and discarded once the real work of coding began. Spec-Driven Development changes this: specifications become executable, directly generating working implementations rather than just guiding them.",
     icon: "",
     category: "Development",
-    benefits: [""],
-    highlight: "",
+    benefits: [
+      "Accelerates development by treating specifications as executable code",
+      "Reduces bugs through automated implementation from precise specs",
+      "Improves team alignment with living documentation that stays in sync with code",
+    ],
+    highlight:
+      "Transform specifications into working code with GitHub's open-source Spec Kit, turning documentation into an executable foundation for your projects.",
     link: "https://github.com/github/spec-kit",
   },
 ];
