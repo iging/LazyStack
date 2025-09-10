@@ -772,16 +772,15 @@ export const developmentTools = [
   {
     title: "Spec Kit",
     description:
-      "Spec-Driven Development flips the script on traditional software development. For decades, code has been king — specifications were just scaffolding we built and discarded once the real work of coding began. Spec-Driven Development changes this: specifications become executable, directly generating working implementations rather than just guiding them.",
+      "Spec Kit is an open-source toolkit from GitHub that enables Spec-Driven Development (SDD)—a methodology where specifications aren't just documentation, but executable blueprints for building software. It integrates with AI coding agents like Claude Code, GitHub Copilot, and Gemini to scaffold, plan, and implement projects from high-level specs.",
     icon: "",
     category: "Development",
     benefits: [
-      "Accelerates development by treating specifications as executable code",
-      "Reduces bugs through automated implementation from precise specs",
-      "Improves team alignment with living documentation that stays in sync with code",
+      "Intent-first development: Use /specify, /plan, and /tasks commands to guide AI agents from idea to implementation",
+      "Multi-phase workflows: Supports greenfield builds, brownfield modernization, and parallel creative exploration",
+      "Tooling & templates: Includes CLI scripts, spec templates, and agent integrations for structured, repeatable workflows",
     ],
-    highlight:
-      "Transform specifications into working code with GitHub's open-source Spec Kit, turning documentation into an executable foundation for your projects.",
+    highlight: "Executable",
     link: "https://github.com/github/spec-kit",
   },
 ];
