@@ -773,7 +773,7 @@ export const developmentTools = [
     title: "Spec Kit",
     description:
       "Spec Kit is an open-source toolkit from GitHub that enables Spec-Driven Development (SDD)—a methodology where specifications aren't just documentation, but executable blueprints for building software. It integrates with AI coding agents like Claude Code, GitHub Copilot, and Gemini to scaffold, plan, and implement projects from high-level specs.",
-    icon: "",
+    icon: "/assets/development/spec-kit-icon.png",
     category: "Development",
     benefits: [
       "Intent-first development: Use /specify, /plan, and /tasks commands to guide AI agents from idea to implementation",
