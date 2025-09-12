@@ -591,7 +591,7 @@ export const aiTools = [
     title: "Scira",
     description:
       "Scira is a cutting-edge, minimalist AI search engine designed to provide instant answers with elegance and simplicity. By leveraging advanced AI technology, Scira strips away clutter to focus on delivering accurate and relevant results quickly.",
-    icon: "",
+    icon: "/assets/ai/scira-icon.png",
     category: "AI",
     benefits: [
       "Minimalist interface: Clean, intuitive design for quick and easy searches",
