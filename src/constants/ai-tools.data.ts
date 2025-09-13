@@ -601,4 +601,18 @@ export const aiTools = [
     highlight: "Minimalist",
     link: "https://scira.ai/",
   },
+  {
+    title: "ByteBot",
+    description:
+      "Bytebot is an open-source AI desktop agent that gives artificial intelligence its own computer. Unlike traditional automation tools or browser-only agents, Bytebot runs in a containerized Linux desktop environment where it can use any application, process documents, navigate websites, and complete complex multi-step workflows—all through simple natural language commands. ",
+    icon: "/assets/ai/bytebot-icon.png",
+    category: "AI",
+    benefits: [
+      "Desktop AI agent: Runs in a containerized Linux environment, giving AI its own computer",
+      "Multi-step workflows: Complete complex workflows through simple natural language commands",
+      "Open-source: Available for free under an open-source license",
+    ],
+    highlight: "Desktop",
+    link: "https://www.bytebot.ai/",
+  },
 ];
