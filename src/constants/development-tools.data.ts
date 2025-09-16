@@ -787,7 +787,7 @@ export const developmentTools = [
     title: "CodeGPT",
     description:
       "CodeGPT is a set of AI-based solutions designed for maximum customization, meeting the highest security standards with its self-hosted solution. CodeGPT features an AI assistant creator (or GPTs), an Agent Marketplace, a Copilot for software engineers, and an API for advanced solutions.",
-    icon: "",
+    icon: "/assets/development/codegpt-icon.png",
     category: "Development",
     benefits: [
       "Customizable AI assistants: Create and manage AI agents with ease",
