@@ -783,4 +783,18 @@ export const developmentTools = [
     highlight: "Executable",
     link: "https://github.com/github/spec-kit",
   },
+  {
+    title: "CodeGPT",
+    description:
+      "CodeGPT is a set of AI-based solutions designed for maximum customization, meeting the highest security standards with its self-hosted solution. CodeGPT features an AI assistant creator (or GPTs), an Agent Marketplace, a Copilot for software engineers, and an API for advanced solutions.",
+    icon: "",
+    category: "Development",
+    benefits: [
+      "Customizable AI assistants: Create and manage AI agents with ease",
+      "Self-hosted solution: Secure and private deployment for maximum customization",
+      "Agent Marketplace: Access to a wide range of AI agents for various tasks",
+    ],
+    highlight: "Customizable",
+    link: "https://codegpt.co/",
+  },
 ];
