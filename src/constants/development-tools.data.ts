@@ -797,4 +797,18 @@ export const developmentTools = [
     highlight: "Customizable",
     link: "https://codegpt.co/",
   },
+  {
+    title: "CodeBuff",
+    description:
+      "CodeBuff is an AI coding assistant designed to help developers write, test, and refactor code, propose execution plans, and collaborate on complex tasks—all while staying embedded in your existing workflow.",
+    icon: "",
+    category: "Development",
+    benefits: [
+      "Context-aware coding: CodeBuff understands your project’s structure and logic to suggest accurate, relevant solutions",
+      "Dual interaction modes: Use code mode for execution and ask mode for brainstorming, planning, and Q&A",
+      "Built-in inspections & testing: Every change is validated with syntax checks and test runs to keep your code production-ready",
+    ],
+    highlight: "Context-aware",
+    link: "https://www.codebuff.com/",
+  },
 ];
