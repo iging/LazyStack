@@ -801,7 +801,7 @@ export const developmentTools = [
     title: "CodeBuff",
     description:
       "Codebuff (formerly Manicode) is a terminal-based coding assistant that helps developers write and execute code directly from the command line. It’s designed for speed, simplicity, and developer delight, with a focus on real-time feedback and minimal setup.",
-    icon: "",
+    icon: "/assets/development/codebuff-icon.png",
     category: "Development",
     benefits: [
       "Terminal-native interface: Code directly from your shell with AI-powered assistance",
