@@ -590,29 +590,29 @@ export const aiTools = [
   {
     title: "Scira",
     description:
-      "Scira is a cutting-edge, minimalist AI search engine designed to provide instant answers with elegance and simplicity. By leveraging advanced AI technology, Scira strips away clutter to focus on delivering accurate and relevant results quickly.",
+      "Scira is a command-palette-driven AI interface designed for developers who want fast, keyboard-first access to powerful models. It offers Grok 4 Fast, a high-performance model optimized for speed and responsiveness, and supports natural language command execution directly from the terminal.",
     icon: "/assets/ai/scira-icon.png",
     category: "AI",
     benefits: [
-      "Minimalist interface: Clean, intuitive design for quick and easy searches",
-      "Instant answers: Get results in seconds with AI-powered precision",
-      "Elegant simplicity: Streamlined experience for a seamless user journey",
+      "Command-first UX: Run AI tasks via a palette-style interface with zero mouse interaction",
+      "Grok 4 Fast model: Optimized for low-latency, high-throughput inference",
+      "Developer-native: Built for speed, minimalism, and terminal-centric workflows",
     ],
-    highlight: "Minimalist",
+    highlight: "Streamlined",
     link: "https://scira.ai/",
   },
   {
     title: "ByteBot",
     description:
-      "Bytebot is an open-source AI desktop agent that gives artificial intelligence its own computer. Unlike traditional automation tools or browser-only agents, Bytebot runs in a containerized Linux desktop environment where it can use any application, process documents, navigate websites, and complete complex multi-step workflows—all through simple natural language commands. ",
+      "Bytebot is an open-source desktop agent that automates tasks by interacting with a full Linux environment—just like a human. It boots sandboxed desktops, navigates apps, clicks buttons, types text, and completes workflows across any software, all from natural language instructions.",
     icon: "/assets/ai/bytebot-icon.png",
     category: "AI",
     benefits: [
-      "Desktop AI agent: Runs in a containerized Linux environment, giving AI its own computer",
-      "Multi-step workflows: Complete complex workflows through simple natural language commands",
-      "Open-source: Available for free under an open-source license",
+      "Full desktop automation: Agents use mouse, keyboard, and screen to complete tasks across apps",
+      "Self-hosted & secure: Run locally with Docker, full control over data and AI keys",
+      "Scalable agent orchestration: Spin up hundreds of agents in parallel for enterprise workflows",
     ],
-    highlight: "Desktop",
+    highlight: "Human-like",
     link: "https://www.bytebot.ai/",
   },
 ];
