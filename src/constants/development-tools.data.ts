@@ -786,29 +786,29 @@ export const developmentTools = [
   {
     title: "CodeGPT",
     description:
-      "CodeGPT is a set of AI-based solutions designed for maximum customization, meeting the highest security standards with its self-hosted solution. CodeGPT features an AI assistant creator (or GPTs), an Agent Marketplace, a Copilot for software engineers, and an API for advanced solutions.",
+      "CodeGPT is an agentic AI platform for software development teams, offering specialized agents for coding, PR reviews, onboarding, and large-scale codebase transformations. It integrates with VS Code and JetBrains IDEs, supports BYOK, and offers enterprise-grade privacy.",
     icon: "/assets/development/codegpt-icon.png",
     category: "Development",
     benefits: [
-      "Customizable AI assistants: Create and manage AI agents with ease",
-      "Self-hosted solution: Secure and private deployment for maximum customization",
-      "Agent Marketplace: Access to a wide range of AI agents for various tasks",
+      "Deep codebase understanding: Context-aware agents trained on your repos and docs",
+      "Agent marketplace: Deploy agents for React, Python, Stripe, and more",
+      "Enterprise-ready: SOC2 certified, zero data retention, and self-hosted options",
     ],
-    highlight: "Customizable",
+    highlight: "Contextual",
     link: "https://codegpt.co/",
   },
   {
     title: "CodeBuff",
     description:
-      "CodeBuff is an AI coding assistant designed to help developers write, test, and refactor code, propose execution plans, and collaborate on complex tasks—all while staying embedded in your existing workflow.",
+      "Codebuff (formerly Manicode) is a terminal-based coding assistant that helps developers write and execute code directly from the command line. It’s designed for speed, simplicity, and developer delight, with a focus on real-time feedback and minimal setup.",
     icon: "",
     category: "Development",
     benefits: [
-      "Context-aware coding: CodeBuff understands your project’s structure and logic to suggest accurate, relevant solutions",
-      "Dual interaction modes: Use code mode for execution and ask mode for brainstorming, planning, and Q&A",
-      "Built-in inspections & testing: Every change is validated with syntax checks and test runs to keep your code production-ready",
+      "Terminal-native interface: Code directly from your shell with AI-powered assistance",
+      "Community-driven: Built with feedback from real developers and evolving rapidly",
+      "Fast setup: Get started instantly—no IDE or browser required",
     ],
-    highlight: "Context-aware",
+    highlight: "Minimal",
     link: "https://www.codebuff.com/",
   },
 ];
