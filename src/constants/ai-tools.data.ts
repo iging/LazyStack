@@ -622,11 +622,11 @@ export const aiTools = [
     icon: "",
     category: "AI",
     benefits: [
-      "Terminal-native interface: Code directly from your shell with AI-powered assistance",
-      "Community-driven: Built with feedback from real developers and evolving rapidly",
-      "Fast setup: Get started instantly—no IDE or browser required",
+      "Compare multiple AI models side by side in a unified interface",
+      "Evaluate model performance across different metrics and use cases",
+      "Supports a wide range of models and frameworks for comprehensive testing",
     ],
-    highlight: "Minimal",
+    highlight: "Comprehensive AI Model Evaluation",
     link: "https://lmarena.ai/",
   },
 ];
