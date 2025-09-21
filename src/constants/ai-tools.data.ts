@@ -615,4 +615,18 @@ export const aiTools = [
     highlight: "Human-like",
     link: "https://www.bytebot.ai/",
   },
+  {
+    title: "Imarena",
+    description:
+      "LM Arena is a platform for AI model testing and comparison, offering a user-friendly interface for evaluating models across various metrics and use cases. It supports a wide range of models and frameworks, making it a valuable resource for developers and researchers.",
+    icon: "",
+    category: "AI",
+    benefits: [
+      "Terminal-native interface: Code directly from your shell with AI-powered assistance",
+      "Community-driven: Built with feedback from real developers and evolving rapidly",
+      "Fast setup: Get started instantly—no IDE or browser required",
+    ],
+    highlight: "Minimal",
+    link: "https://lmarena.ai/",
+  },
 ];
