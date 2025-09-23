@@ -619,7 +619,7 @@ export const aiTools = [
     title: "Imarena",
     description:
       "LM Arena is a platform for AI model testing and comparison, offering a user-friendly interface for evaluating models across various metrics and use cases. It supports a wide range of models and frameworks, making it a valuable resource for developers and researchers.",
-    icon: "",
+    icon: "/assets/ai/lmarena-icon.png",
     category: "AI",
     benefits: [
       "Compare multiple AI models side by side in a unified interface",
