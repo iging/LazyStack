@@ -811,4 +811,13 @@ export const developmentTools = [
     highlight: "Minimal",
     link: "https://www.codebuff.com/",
   },
+  {
+    title: "",
+    description: "",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "",
+    link: "https://athas.dev/",
+  },
 ];
