@@ -813,11 +813,16 @@ export const developmentTools = [
   },
   {
     title: "Athas",
-    description: "",
+    description:
+      "Athas is a developer-native AI agent that runs locally and understands your codebase deeply. It’s built for real-time collaboration, offering inline suggestions, refactors, and architectural insights—all without sending your code to the cloud.",
     icon: "",
     category: "Development",
-    benefits: [""],
-    highlight: "",
+    benefits: [
+      "Athas is a developer-native AI agent that runs locally and understands your codebase deeply. It’s built for real-time collaboration, offering inline suggestions, refactors, and architectural insights—all without sending your code to the cloud.",
+      "Deep repo context: Athas reads and understands your entire codebase for smarter suggestions",
+      "Fast & lightweight: Designed for speed, minimal setup, and seamless IDE integration",
+    ],
+    highlight: "Private",
     link: "https://athas.dev/",
   },
 ];

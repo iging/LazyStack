@@ -616,17 +616,17 @@ export const aiTools = [
     link: "https://www.bytebot.ai/",
   },
   {
-    title: "Imarena",
+    title: "Lmarena",
     description:
-      "LM Arena is a platform for AI model testing and comparison, offering a user-friendly interface for evaluating models across various metrics and use cases. It supports a wide range of models and frameworks, making it a valuable resource for developers and researchers.",
+      "Lmarena is a multi-agent AI operating system designed for autonomous software development. It orchestrates specialized agents—each with distinct roles like planning, coding, reviewing, and testing—to build and maintain software collaboratively. Think of it as a self-managing dev team powered by AI.",
     icon: "/assets/ai/lmarena-icon.png",
     category: "AI",
     benefits: [
-      "Compare multiple AI models side by side in a unified interface",
-      "Evaluate model performance across different metrics and use cases",
-      "Supports a wide range of models and frameworks for comprehensive testing",
+      "Agent specialization: Planner, Coder, Reviewer, and Tester agents work in tandem for full-cycle development",
+      "Autonomous iteration: Agents propose, implement, and refine features without human micromanagement",
+      "Open-source & extensible: Customize agent behavior, workflows, and integrations to fit your stack",
     ],
-    highlight: "Comprehensive AI Model Evaluation",
+    highlight: "Orchestrated",
     link: "https://lmarena.ai/",
   },
 ];
