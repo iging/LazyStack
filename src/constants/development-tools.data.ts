@@ -814,8 +814,8 @@ export const developmentTools = [
   {
     title: "Athas",
     description:
-      "Athas is a developer-native AI agent that runs locally and understands your codebase deeply. It’s built for real-time collaboration, offering inline suggestions, refactors, and architectural insights—all without sending your code to the cloud.",
-    icon: "",
+      "A lightweight code editor built with React, TypeScript, and Tauri. Designed for developers who want a fast and customizable development environment.",
+    icon: "/assets/development/athas-icon.png",
     category: "Development",
     benefits: [
       "Athas is a developer-native AI agent that runs locally and understands your codebase deeply. It’s built for real-time collaboration, offering inline suggestions, refactors, and architectural insights—all without sending your code to the cloud.",
