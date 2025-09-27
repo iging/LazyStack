@@ -825,4 +825,18 @@ export const developmentTools = [
     highlight: "Private",
     link: "https://athas.dev/",
   },
+  {
+    title: "Momen",
+    description:
+      "Build web apps visually without code with Momen - the leading #nocode platform for startups without traditional engineers.",
+    icon: "",
+    category: "Development",
+    benefits: [
+      "Visual drag-and-drop interface for building web applications",
+      "No coding required - perfect for non-technical founders",
+      "Quickly prototype and launch MVPs without engineering resources",
+    ],
+    highlight: "No-Code",
+    link: "https://momen.app/",
+  },
 ];
