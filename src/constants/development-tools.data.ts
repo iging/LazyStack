@@ -829,7 +829,7 @@ export const developmentTools = [
     title: "Momen",
     description:
       "Build web apps visually without code with Momen - the leading #nocode platform for startups without traditional engineers.",
-    icon: "",
+    icon: "/assets/development/momen-icon.png",
     category: "Development",
     benefits: [
       "Visual drag-and-drop interface for building web applications",
