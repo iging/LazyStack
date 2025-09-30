@@ -828,15 +828,15 @@ export const developmentTools = [
   {
     title: "Momen",
     description:
-      "Build web apps visually without code with Momen - the leading #nocode platform for startups without traditional engineers.",
+      "Momen is a no-code app builder designed for non-technical founders who want to launch production-ready web apps with ease. It combines visual design tools, real AI agents, and full-code customization to support users from idea to scale.",
     icon: "/assets/development/momen-icon.png",
     category: "Development",
     benefits: [
-      "Visual drag-and-drop interface for building web applications",
-      "No coding required - perfect for non-technical founders",
-      "Quickly prototype and launch MVPs without engineering resources",
+      "No-code to full control: Start visually, then unlock full-code access as your app grows",
+      "Built-in AI agents: Supercharge your app with intelligent features and automation",
+      "Massive adoption: Over 300,000 builders serving 10+ million users worldwide",
     ],
-    highlight: "No-Code",
+    highlight: "Empowering",
     link: "https://momen.app/",
   },
 ];
