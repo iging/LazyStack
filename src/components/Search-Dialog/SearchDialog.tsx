@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   Dialog,
   DialogTrigger,
@@ -21,6 +21,20 @@ export function SearchDialog() {
   const [open, setOpen] = useState(false);
   const [filterMenuOpen, setFilterMenuOpen] = useState(false);
   const filterMenuRef = useRef<HTMLDivElement>(null);
+
+  // Add keyboard shortcut listener
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac)
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        setOpen((prev) => !prev);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   // Use the extracted hooks
   const {
@@ -58,7 +72,7 @@ export function SearchDialog() {
           <span className="text-sm text-muted-foreground">Search tools...</span>
           <div className="flex-grow"></div>
           <kbd className="pointer-events-none inline-flex h-6 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground">
-            <span className="text-xs">⌘</span>LS
+            <span className="text-xs">⌘</span>K
           </kbd>
         </button>
       </DialogTrigger>

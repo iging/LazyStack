@@ -32,7 +32,7 @@ export function FooterBottom({ isDark, currentYear }: FooterBottomProps) {
         <span className="flex items-center">
           Developed with{" "}
           <Heart className="mx-1 h-3 w-3 fill-pink-500 text-pink-500" /> by
-          akosikhada & znarf-y
+          iging & znarf-y
         </span>
       </div>
     </div>

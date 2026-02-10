@@ -1,4 +1,11 @@
 import React from "react";
+import { cn } from "../../lib/utils";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { FeatureItem } from "../../types/jumbotron-types";
 
 interface FeatureCardProps {
@@ -11,36 +18,20 @@ interface FeatureCardProps {
  */
 export function FeatureCard({ feature, isDark }: FeatureCardProps) {
   return (
-    <div
-      className={`group ${
-        isDark
-          ? "border-purple-500/30 bg-gradient-to-br from-[#1a1225]/90 to-[#120a1c]/95 shadow-purple-900/10 backdrop-blur-md hover:shadow-purple-900/30"
-          : "border-purple-200/80 bg-gradient-to-br from-white to-[#f7f7fa] shadow-purple-100/30 backdrop-blur-md hover:shadow-purple-200/50"
-      } floating-element overflow-hidden rounded-xl border shadow-xl transition-all duration-300`}
+    <Card
+      className={cn(
+        "floating-element transition-smooth group min-h-[120px] overflow-hidden",
+        isDark ? "card-dark" : "card-light",
+      )}
     >
-      <div className="flex h-full min-h-[120px] flex-col p-5 sm:p-6">
-        <div className="mb-4 flex items-center">
-          <div
-            className={`flex h-9 w-9 items-center justify-center ${
-              isDark ? "bg-purple-500/30" : "bg-purple-100"
-            } mr-3 rounded-lg`}
-          >
-            <span className={isDark ? "text-purple-300" : "text-purple-600"}>
-              {feature.icon || "◆"}
-            </span>
-          </div>
-          <h3
-            className={`${isDark ? "text-white" : "text-gray-800"} text-base font-semibold tracking-tight sm:text-lg`}
-          >
-            {feature.title}
-          </h3>
-        </div>
-        <p
-          className={`${isDark ? "text-white/90" : "text-gray-700"} text-sm leading-relaxed sm:text-base`}
-        >
+      <CardHeader className="p-5 sm:p-6">
+        <CardTitle className="mb-3 text-sm font-semibold tracking-tight sm:text-base">
+          {feature.title}
+        </CardTitle>
+        <CardDescription className="text-xs leading-relaxed sm:text-sm">
           {feature.description}
-        </p>
-      </div>
-    </div>
+        </CardDescription>
+      </CardHeader>
+    </Card>
   );
 }

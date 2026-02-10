@@ -15,7 +15,7 @@ interface ContactLink {
  */
 export function FooterContact({ isDark }: FooterContactProps) {
   const contactLinks: ContactLink[] = [
-    { href: "https://github.com/akosikhada", username: "akosikhada" },
+    { href: "https://github.com/iging", username: "iging" },
     { href: "https://github.com/znarf-y", username: "znarf-y" },
   ];
 

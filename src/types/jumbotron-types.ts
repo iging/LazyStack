@@ -32,5 +32,5 @@ export interface UseJumbotronEffectsReturn {
 export interface FeatureItem {
   title: string;
   description: string;
-  icon?: string;
+  icon?: React.ComponentType<{ className?: string }>;
 }
