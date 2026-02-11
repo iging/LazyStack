@@ -42,20 +42,19 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
   // Feature items data
   const features: FeatureItem[] = [
     {
-      title: "Developer's Edge",
-      description: "Boost your productivity with competitive tools & workflows",
-      icon: "🚀",
-    },
-    {
-      title: "Quality Companion",
+      title: "Curated Excellence",
       description:
-        "Reliable solutions for maintaining code quality & standards",
-      icon: "✨",
+        "50+ hand-picked premium tools vetted for quality and innovation",
     },
     {
-      title: "Multilingual Savior",
-      description: "Support for multiple programming languages & frameworks",
-      icon: "🌐",
+      title: "Intelligent Discovery",
+      description:
+        "Advanced search with real-time filtering and category navigation",
+    },
+    {
+      title: "Production-Ready Insights",
+      description:
+        "Comprehensive profiles with benefits, highlights, and direct access",
     },
   ];
 
